@@ -16,7 +16,7 @@ git clone git@github.com:ChristopherBarrington/scviewer-app.git sc_project
 
 # if scviewer package is not installed, the submodule can be used:
 cd sc_project/
-git submodule update --init
+git submodule update --init --remote
 ```
 
 A submodule can be updated:
