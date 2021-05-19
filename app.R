@@ -8,7 +8,7 @@
 # ===========================================================================
 #
 
-devtools::load_all(path='scviewer', export_all=FALSE) # load from the current directory
-# library(scviewer) # load from a library
+if(!require(scviewer))
+  devtools::load_all(path='scviewer', export_all=FALSE) # load from the current directory
 
 scviewer::run_scviewer() # launch the app
