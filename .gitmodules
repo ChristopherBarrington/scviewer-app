@@ -1,4 +1,0 @@
-[submodule "scviewer"]
-	path = scviewer
-	url = https://github.com/ChristopherBarrington/scviewer
-	branch = main
