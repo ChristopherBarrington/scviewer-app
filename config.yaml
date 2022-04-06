@@ -1,5 +1,6 @@
 title: A Project Title
 initial_feature: STMN2
+initial_reduction: umap
 tracker: trackers/untracked.html
 datasets:
   Group one:
