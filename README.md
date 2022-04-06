@@ -35,6 +35,6 @@ git submodule update --remote
 
 The `yaml` configuration file contains parameters for the session. The `datasets` section of the configuration file is used to populate the dataset selection drop down. It is a two-level list: the first level denotes groups within the drop down (eg. species) and the second denotes datasets (eg. samples). Each dataset must contain a `file` key which is the path to a properly-formatted `h5` file.
 
-The top-level `initial_feature` key can be used to define an initial feature that is displayed for all datasets in the instance. This can be overridden by specifying the `initial_feature` at any level of the configuration.
+The top-level `initial_feature` key can be used to define an initial feature that is displayed for all datasets in the instance. This can be overridden by specifying the `initial_feature` at any level of the configuration. Similarly, the `initial_reduction` key specifies which reduction should be displayed. The priority if not specified is: `umap`, `tsne`, `pca` and `lsi`. For multiome analsysis for example this may be `umap.wnn`.
 
 Ignore the `tracker` for now.
