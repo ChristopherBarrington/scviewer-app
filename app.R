@@ -11,4 +11,16 @@
 if(!require(scviewer))
   devtools::load_all(path='scviewer', export_all=FALSE) # load from the current directory
 
+date() %>%
+  sprintf(fmt='=== (app) scviewer started at: %s') %>%
+  cat(sep='\n', file=stderr())
+
+packageVersion('scviewer') %>%
+  sprintf(fmt='=== (app) using scviewer version %s') %>%
+  cat(sep='\n', file=stderr())
+
+find.package('scviewer') %>%
+  sprintf(fmt='=== (app) scviewer package is located at: %s') %>%
+  cat(sep='\n', file=stderr())
+
 scviewer::run_scviewer() # launch the app
